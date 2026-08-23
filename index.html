@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SLC Men's Group</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --navy:#0f2442;
+    --sage:#b7c8c3;
+    --cream:#f8f6f2;
+    --text:#2f2f2f;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--cream);
+    color:var(--text);
+    line-height:1.7;
+}
+
+.hero{
+    height:100vh;
+    background:
+        linear-gradient(
+            rgba(15,36,66,.55),
+            rgba(15,36,66,.55)
+        ),
+        url('IMG_3676.jpg');
+    background-size:cover;
+    background-position:center 25%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:2rem;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h1{
+    font-size:clamp(3rem,6vw,5rem);
+    font-weight:800;
+    margin-bottom:1rem;
+}
+
+.hero-tagline{
+    font-size:1.5rem;
+    font-weight:600;
+    margin-bottom:1.5rem;
+}
+
+.hero-description{
+    font-size:1.25rem;
+    max-width:700px;
+    margin:auto;
+}
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:90px 24px;
+}
+
+.section-title{
+    font-size:2.25rem;
+    color:var(--navy);
+    margin-bottom:1rem;
+}
+
+.mission{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.mission p{
+    font-size:1.15rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:var(--navy);
+    margin-bottom:12px;
+}
+
+.highlight{
+    background:#e8efec;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:18px;
+    margin-top:35px;
+}
+
+.gallery img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:14px;
+    transition:transform .2s ease;
+}
+
+.gallery img:hover{
+    transform:scale(1.02);
+}
+
+.meeting-box{
+    background:white;
+    padding:35px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    max-width:900px;
+    margin:auto;
+}
+
+form{
+    max-width:700px;
+    margin:40px auto 0;
+    text-align:left;
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-top:8px;
+    margin-bottom:18px;
+    font-family:inherit;
+}
+
+button{
+    background:var(--navy);
+    color:white;
+    border:none;
+    padding:14px 28px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+    font-size:1rem;
+    transition:.2s;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+.footer{
+    background:var(--navy);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+.checkbox-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.checkbox-row input{
+    width:auto;
+    margin:0;
+}
+
+.small-text{
+    margin-top:15px;
+    color:#666;
+    font-size:.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="hero-content">
+
+        <h1>Men Need Community.</h1>
+
+        <div class="hero-tagline">
+            Honest conversations. Meaningful friendships. Shared adventures.
+        </div>
+
+        <p class="hero-description">
+            SLC Men's Group is a place for personal growth, authentic connection,
+            and a community of men who show up for one another.
+        </p>
+
+    </div>
+</section>
+
+<section class="section mission">
+
+    <h2 class="section-title">Our Mission</h2>
+
+    <p>
+        To create a safe space for men to interact in a supportive community,
+        have honest and powerful conversations, and experience growth in meaningful ways.
+        Men thrive when they have a place to be known, supported,
+        and encouraged by other men.
+    </p>
+
+</section>
+
+<section class="section">
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Why We Exist</h3>
+            <ul>
+                <li>Many men experience pressure, anxiety, and isolation.</li>
+                <li>Real friendship and honest conversation can be hard to find.</li>
+                <li>We want to create healthy community and meaningful connection.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>What We Do</h3>
+            <ul>
+                <li>Share openly about life and personal growth.</li>
+                <li>Support each other without judgment or competition.</li>
+                <li>Build lasting friendships grounded in honesty.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>What To Expect</h3>
+            <ul>
+                <li>Informal and welcoming discussions.</li>
+                <li>No pressure to share.</li>
+                <li>Listening is participation too.</li>
+                <li>A safe place to be vulnerable and authentic.</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section highlight">
+
+    <h2 class="section-title">More Than Meetings</h2>
+
+    <p>
+        Community grows through shared experiences. Outside our discussions,
+        members often connect through hiking, backpacking, biking,
+        service opportunities, and adventures throughout Utah.
+    </p>
+
+    <div class="gallery">
+
+        <img src= "IMG_3676.jpg">
+        <img src= "IMG_2559.JPG">
+        <img src= "IMG_3290.JPG">
+        <img src= "IMG_2513.JPG">
+        <img src= "IMG_2827.JPG">
+        <img src= "IMG_0897.JPG">
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2 class="section-title">Meetings</h2>
+
+    <div class="meeting-box">
+
+        <p><strong>When:</strong> Every other Monday evening, typically lasting ~2 hours</p>
+
+        <p><strong>Where:</strong> Usually at a local library, with occasional gatherings at other locations around the Salt Lake area.</p>
+
+        <p><strong>Atmosphere:</strong> Open, relaxed, respectful, and supportive. The meetings are informal, round table discussions.</p>
+
+        <p><strong>Participation:</strong> You are never required to share. Many people start by simply listening.</p>
+
+        <p><strong>Community:</strong> Members also stay connected through a private Discord community between meetings.</p>
+
+    </div>
+
+</section>
+
+<section class="section mission">
+
+    <h2 class="section-title">Join Us</h2>
+
+    <p>
+        If you're looking for meaningful friendship, honest conversation,
+        and a community of men committed to growth, we'd love to meet you.
+    </p>
+<form action="https://formsubmit.co/bdwyer1911@gmail.com" method="POST">
+
+    <!-- FormSubmit Configuration -->
+    <input type="hidden" name="_subject" value="New SLC Men's Group Interest Form">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="true">
+
+    <!-- Honeypot Spam Protection -->
+    <input type="text" name="_honey" style="display:none">
+
+    <!-- Name -->
+    <label for="name"><strong>Name</strong></label>
+    <input
+        type="text"
+        id="name"
+        name="name"
+        required
+    >
+
+    <!-- Email -->
+    <label for="email"><strong>Email Address</strong></label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        required
+    >
+
+    <!-- Interest -->
+    <label for="interest">
+        <strong>What interests you about the group?</strong>
+    </label>
+    <textarea
+        id="interest"
+        name="interest"
+        rows="5"
+        placeholder="Tell us a little about yourself and what you're hoping to find in the group."
+    ></textarea>
+
+    <!-- Referral Source -->
+    <label for="referral">
+        <strong>How did you hear about us?</strong>
+    </label>
+
+    <select id="referral" name="referral">
+        <option value="">Select One</option>
+        <option value="Friend">Friend</option>
+        <option value="Discord">Discord</option>
+	<option value="Flier">Discord</option>
+        <option value="Social Media">Social Media</option>
+        <option value="Online Search">Online Search</option>
+        <option value="Community Event">Community Event</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <!-- Discord -->
+    <label class="checkbox-row">
+        <input
+            type="checkbox"
+            name="discord_interest"
+            value="Yes"
+        >
+        I'd like information about the Discord community.
+    </label>
+
+    <!-- Submit Button -->
+    <button type="submit">
+        I'd Like to Join
+    </button>
+
+    <p class="small-text">
+        We'll only use your information to contact you about SLC Men's Group.
+    </p>
+
+</form>
+    
